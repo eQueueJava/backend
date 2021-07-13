@@ -1,7 +1,7 @@
 package com.equeue.backend.models;
 
 public enum Role {
-	CLIENT,
+	ADMIN,
 	COSTUMER,
-	ADMIN;
+	CLIENT;
 }

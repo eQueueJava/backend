@@ -1,4 +1,3 @@
--- auto-generated definition
 create table roles
 (
     id   int auto_increment

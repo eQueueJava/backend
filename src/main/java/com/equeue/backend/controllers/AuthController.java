@@ -81,12 +81,7 @@ public class AuthController {
                     signupRequest.getEmail(),
                     passwordEncoder.encode(signupRequest.getPassword()));
 
-            Set<String> reqRol = signupRequest.getRoles();
-            Set<String> reqRoles = new HashSet<>();
-            for (String s : reqRol) {
-                s.toUpperCase();
-                reqRoles.add(s);
-            }
+            Set<String> reqRoles = signupRequest.getRoles();
             Set<RoleEntity> roles = new HashSet<>();
 
             if (reqRoles == null) {
@@ -129,5 +124,4 @@ public class AuthController {
                     .body(new MessageResponse("Error: Username is incorrect"));
         }
     }
-
 }
