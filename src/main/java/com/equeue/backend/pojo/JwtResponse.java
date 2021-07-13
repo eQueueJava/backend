@@ -1,7 +1,6 @@
 package com.equeue.backend.pojo;
 
 import lombok.Data;
-
 import java.util.List;
 
 @Data

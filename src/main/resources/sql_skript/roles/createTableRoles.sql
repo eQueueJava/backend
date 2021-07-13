@@ -1,6 +1,6 @@
 create table roles
 (
     id   int auto_increment
-        primary key,
+    primary key,
     name varchar(255) not null
 );
